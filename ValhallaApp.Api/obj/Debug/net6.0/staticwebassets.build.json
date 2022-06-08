@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "pEuMmFZTg2c9WXlv1gkvSxx8BhRraGE9esNQw+vhmyk=",
+  "Source": "ValhallaApp.Api",
+  "BasePath": "_content/ValhallaApp.Api",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
