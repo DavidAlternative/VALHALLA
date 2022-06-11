@@ -1,6 +1,7 @@
 using FluentValidation.AspNetCore;
 using Microsoft.EntityFrameworkCore;
 using ValhallaApp.Application;
+using ValhallaApp.Application.Services;
 using ValhallaApp.Domain.Interfaces;
 using ValhallaApp.Infrastructure.Persistence;
 using ValhallaApp.Infrastructure.Repositories;
@@ -31,6 +32,10 @@ builder.Services.AddTransient<IConfiguratedProductRepository, ConfiguratedProduc
 builder.Services.AddTransient<IConfigurationRepository, ConfigurationRepository>();
 //Orders
 builder.Services.AddTransient<IOrderRepository, OrderRepository>();
+
+//Services
+//User
+builder.Services.AddTransient<IUserService, UserService>();
 
 
 

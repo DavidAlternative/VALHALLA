@@ -1,25 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\401\\Downloads\\VALHALLA\\ValhallaApp.Domain\\ValhallaApp.Domain.csproj": {}
+    "C:\\Users\\307\\Desktop\\VALHALLA\\ValhallaApp.Domain\\ValhallaApp.Domain.csproj": {}
   },
   "projects": {
-    "C:\\Users\\401\\Downloads\\VALHALLA\\ValhallaApp.Domain\\ValhallaApp.Domain.csproj": {
+    "C:\\Users\\307\\Desktop\\VALHALLA\\ValhallaApp.Domain\\ValhallaApp.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\401\\Downloads\\VALHALLA\\ValhallaApp.Domain\\ValhallaApp.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\307\\Desktop\\VALHALLA\\ValhallaApp.Domain\\ValhallaApp.Domain.csproj",
         "projectName": "ValhallaApp.Domain",
-        "projectPath": "C:\\Users\\401\\Downloads\\VALHALLA\\ValhallaApp.Domain\\ValhallaApp.Domain.csproj",
-        "packagesPath": "C:\\Users\\401\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\401\\Downloads\\VALHALLA\\ValhallaApp.Domain\\obj\\",
+        "projectPath": "C:\\Users\\307\\Desktop\\VALHALLA\\ValhallaApp.Domain\\ValhallaApp.Domain.csproj",
+        "packagesPath": "C:\\Users\\307\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\307\\Desktop\\VALHALLA\\ValhallaApp.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\401\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Users\\307\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net6.0"

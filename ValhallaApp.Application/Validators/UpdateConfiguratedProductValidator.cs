@@ -23,5 +23,5 @@ namespace ValhallaApp.Application.Validators
                 .WithMessage("El campo ConfigurationId no puede estar vacío.");
         }
     }
-    }
+    
 }
