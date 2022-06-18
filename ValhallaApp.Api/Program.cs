@@ -4,6 +4,8 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
 using ValhallaApp.Application;
+using ValhallaApp.Application.Interfaces;
+using ValhallaApp.Application.Services;
 using ValhallaApp.Domain.Interfaces;
 using ValhallaApp.Infrastructure.Persistence;
 using ValhallaApp.Infrastructure.Repositories;
@@ -52,6 +54,9 @@ builder.Services.AddTransient<IConfigurationRepository, ConfigurationRepository>
 //Orders
 builder.Services.AddTransient<IOrderRepository, OrderRepository>();
 
+//Services
+//User
+builder.Services.AddTransient<IUserService, UserService>();
 
 
 builder.Services.AddCors(p => p.AddPolicy("ValhallaCors", builder =>
