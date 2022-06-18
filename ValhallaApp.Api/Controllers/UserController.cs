@@ -6,6 +6,7 @@ using ValhallaApp.Domain.Interfaces;
 using AutoMapper;
 using ValhallaApp.Application.Requests;
 using Microsoft.AspNetCore.Authorization;
+using ValhallaApp.Application.Interfaces;
 
 namespace ValhallaApp.Api.Controllers
 {
@@ -14,28 +15,24 @@ namespace ValhallaApp.Api.Controllers
     [ApiController]
     public class UserController : ControllerBase
     {
-        private readonly IUserRepository _repository;
-        private readonly IMapper _mapper;
-
-        public UserController(IUserRepository repository, IMapper mapper)
+        private readonly IUserService _service;
+        public UserController(IUserService service)
         {
-            _repository = repository;
-            _mapper = mapper;
+            _service = service;
         }
 
         [HttpGet]
 
         public IActionResult Get()
         {
-            return Ok(_repository.GetUsers());      
+            return Ok(_service.GetUsers());      
         }
 
         [HttpPost]
 
         public IActionResult Post(CreateUserRequest request)
         {
-            var user = _mapper.Map<User>(request);
-            _repository.AddUser(user);
+            _service.AddUser(request);
             return Ok();
         }
 
@@ -43,8 +40,7 @@ namespace ValhallaApp.Api.Controllers
 
         public IActionResult Put(UpdateUserRequest request)
         {
-            var user = _mapper.Map<User>(request);
-            _repository.UpdateUser(user);
+            _service.UpdateUser(request);
             return Ok();
         }
 
@@ -52,8 +48,7 @@ namespace ValhallaApp.Api.Controllers
 
         public IActionResult Delete(DeleteUserRequest request)
         {
-            var user = _mapper.Map<User>(request);
-            _repository.DeleteUser(user);
+            _service.DeleteUser(request);
             return Ok();
         }
     }
