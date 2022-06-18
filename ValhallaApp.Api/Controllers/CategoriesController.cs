@@ -4,9 +4,11 @@ using Microsoft.AspNetCore.Mvc;
 using ValhallaApp.Application.Requests;
 using ValhallaApp.Domain.Interfaces;
 using ValhallaApp.Domain.Entities;
+using Microsoft.AspNetCore.Authorization;
 
 namespace ValhallaApp.Api.Controllers
 {
+    [Authorize]
     [Route("api/[controller]")]
     [ApiController]
     public class CategoriesController : ControllerBase

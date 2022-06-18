@@ -5,9 +5,11 @@ using ValhallaApp.Infrastructure.Persistence;
 using ValhallaApp.Domain.Interfaces;
 using AutoMapper;
 using ValhallaApp.Application.Requests;
+using Microsoft.AspNetCore.Authorization;
 
 namespace ValhallaApp.Api.Controllers
 {
+    [Authorize]
     [Route("api/[controller]")]
     [ApiController]
     public class UserController : ControllerBase

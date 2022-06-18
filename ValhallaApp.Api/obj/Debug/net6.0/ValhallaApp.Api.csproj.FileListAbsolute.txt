@@ -425,3 +425,5 @@ C:\Users\401\Downloads\VALHALLA\ValhallaApp.Api\obj\Debug\net6.0\refint\Valhalla
 C:\Users\401\Downloads\VALHALLA\ValhallaApp.Api\obj\Debug\net6.0\ValhallaApp.Api.pdb
 C:\Users\401\Downloads\VALHALLA\ValhallaApp.Api\obj\Debug\net6.0\ValhallaApp.Api.genruntimeconfig.cache
 C:\Users\401\Downloads\VALHALLA\ValhallaApp.Api\obj\Debug\net6.0\ref\ValhallaApp.Api.dll
+C:\Users\307\Desktop\VALHALLA\ValhallaApp.Api\bin\Debug\net6.0\libman.json
+C:\Users\307\Desktop\VALHALLA\ValhallaApp.Api\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
