@@ -5,6 +5,7 @@ using ValhallaApp.Application.Requests;
 using ValhallaApp.Domain.Interfaces;
 using ValhallaApp.Domain.Entities;
 using Microsoft.AspNetCore.Authorization;
+using ValhallaApp.Application.Interfaces;
 
 namespace ValhallaApp.Api.Controllers
 {
@@ -13,28 +14,25 @@ namespace ValhallaApp.Api.Controllers
     [ApiController]
     public class CategoriesController : ControllerBase
     {
-        private readonly ICategoryRepository _repository;
-        private readonly IMapper _mapper;
+        private readonly ICategoryService _service;
 
-        public CategoriesController(ICategoryRepository repository, IMapper mapper)
+        public CategoriesController(ICategoryService service)
         {
-            _repository = repository;
-            _mapper = mapper;
+            _service = service;
         }
 
         [HttpGet]
 
         public IActionResult Get()
         {
-            return Ok(_repository.GetCategory());
+            return Ok(_service.GetCategory());
         }
 
         [HttpPost]
 
         public IActionResult Post(CreateCategoryRequest request)
         {
-            var category = _mapper.Map<Category>(request);
-            _repository.AddCategory(category);
+            _service.AddCategory(request);
             return Ok();
 
         }
@@ -43,8 +41,7 @@ namespace ValhallaApp.Api.Controllers
 
         public IActionResult Put(UpdateCategoryRequest request)
         {
-            var category = _mapper.Map<Category>(request);
-            _repository.UpdateCategory(category);
+            _service.UpdateCategory(request);   
             return Ok();
         }
 
@@ -52,8 +49,7 @@ namespace ValhallaApp.Api.Controllers
 
         public IActionResult Delete(DeleteCategoryRequest request)
         {
-            var category = _mapper.Map<Category>(request);
-            _repository.DeleteCategory(category);
+            _service.DeleteCategory(request);
             return Ok();
         }
 

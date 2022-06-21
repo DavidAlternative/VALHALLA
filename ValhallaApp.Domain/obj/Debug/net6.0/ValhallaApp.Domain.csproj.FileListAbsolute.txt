@@ -70,3 +70,15 @@ C:\Users\401\Downloads\VALHALLA\ValhallaApp.Domain\obj\Debug\net6.0\ValhallaApp.
 C:\Users\401\Downloads\VALHALLA\ValhallaApp.Domain\obj\Debug\net6.0\refint\ValhallaApp.Domain.dll
 C:\Users\401\Downloads\VALHALLA\ValhallaApp.Domain\obj\Debug\net6.0\ValhallaApp.Domain.pdb
 C:\Users\401\Downloads\VALHALLA\ValhallaApp.Domain\obj\Debug\net6.0\ref\ValhallaApp.Domain.dll
+C:\Users\david\OneDrive\Escritorio\VALHALLA-main\VALHALLA-main\ValhallaApp.Domain\bin\Debug\net6.0\ValhallaApp.Domain.deps.json
+C:\Users\david\OneDrive\Escritorio\VALHALLA-main\VALHALLA-main\ValhallaApp.Domain\bin\Debug\net6.0\ValhallaApp.Domain.dll
+C:\Users\david\OneDrive\Escritorio\VALHALLA-main\VALHALLA-main\ValhallaApp.Domain\bin\Debug\net6.0\ValhallaApp.Domain.pdb
+C:\Users\david\OneDrive\Escritorio\VALHALLA-main\VALHALLA-main\ValhallaApp.Domain\obj\Debug\net6.0\ValhallaApp.Domain.csproj.AssemblyReference.cache
+C:\Users\david\OneDrive\Escritorio\VALHALLA-main\VALHALLA-main\ValhallaApp.Domain\obj\Debug\net6.0\ValhallaApp.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\david\OneDrive\Escritorio\VALHALLA-main\VALHALLA-main\ValhallaApp.Domain\obj\Debug\net6.0\ValhallaApp.Domain.AssemblyInfoInputs.cache
+C:\Users\david\OneDrive\Escritorio\VALHALLA-main\VALHALLA-main\ValhallaApp.Domain\obj\Debug\net6.0\ValhallaApp.Domain.AssemblyInfo.cs
+C:\Users\david\OneDrive\Escritorio\VALHALLA-main\VALHALLA-main\ValhallaApp.Domain\obj\Debug\net6.0\ValhallaApp.Domain.csproj.CoreCompileInputs.cache
+C:\Users\david\OneDrive\Escritorio\VALHALLA-main\VALHALLA-main\ValhallaApp.Domain\obj\Debug\net6.0\ValhallaApp.Domain.dll
+C:\Users\david\OneDrive\Escritorio\VALHALLA-main\VALHALLA-main\ValhallaApp.Domain\obj\Debug\net6.0\refint\ValhallaApp.Domain.dll
+C:\Users\david\OneDrive\Escritorio\VALHALLA-main\VALHALLA-main\ValhallaApp.Domain\obj\Debug\net6.0\ValhallaApp.Domain.pdb
+C:\Users\david\OneDrive\Escritorio\VALHALLA-main\VALHALLA-main\ValhallaApp.Domain\obj\Debug\net6.0\ref\ValhallaApp.Domain.dll

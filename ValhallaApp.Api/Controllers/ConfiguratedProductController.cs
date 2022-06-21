@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using ValhallaApp.Application.Interfaces;
 using ValhallaApp.Application.Requests;
 using ValhallaApp.Domain.Entities;
 using ValhallaApp.Domain.Interfaces;
@@ -13,28 +14,25 @@ namespace ValhallaApp.Api.Controllers
     [ApiController]
     public class ConfiguratedProductController : ControllerBase
     {
-        private readonly IConfiguratedProductRepository _repository;
-        private readonly IMapper _mapper;
+        private readonly IConfiguratedProductService _service;
 
-        public ConfiguratedProductController(IConfiguratedProductRepository repository, IMapper mapper)
+        public ConfiguratedProductController(IConfiguratedProductService service)
         {
-            _repository = repository;
-            _mapper = mapper;
+            _service = service;
         }
 
         [HttpGet]
 
         public IActionResult Get()
         {
-            return Ok(_repository.GetConfiguratedProducts());
+            return Ok(_service.GetConfiguratedProducts());
         }
 
         [HttpPost]
 
         public IActionResult Post(CreateConfiguratedProductRequest request)
         {
-            var configuratedProduct = _mapper.Map<ConfiguratedProduct>(request);
-            _repository.AddConfiguratedProduct(configuratedProduct);
+            _service.AddConfiguratedProduct(request);
             return Ok();
         }
 
@@ -42,8 +40,7 @@ namespace ValhallaApp.Api.Controllers
 
         public IActionResult Put(UpdateConfiguratedProductRequest request)
         {
-            var configuratedProduct = _mapper.Map<ConfiguratedProduct>(request);
-            _repository.UpdateConfiguratedProduct(configuratedProduct);
+            _service.UpdateConfiguratedProduct(request);
             return Ok();
         }
 
@@ -51,8 +48,7 @@ namespace ValhallaApp.Api.Controllers
 
         public IActionResult Delete(DeleteConfiguratedProductRequest request)
         {
-            var configuratedProduct = _mapper.Map<ConfiguratedProduct>(request);
-            _repository.DeleteConfiguratedProduct(configuratedProduct);
+            _service.DeleteConfiguratedProduct(request);
             return Ok();
         }
     }

@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using ValhallaApp.Application.Interfaces;
 using ValhallaApp.Application.Requests;
 using ValhallaApp.Domain.Entities;
 using ValhallaApp.Domain.Interfaces;
@@ -13,28 +14,24 @@ namespace ValhallaApp.Api.Controllers
     [ApiController]
     public class ConfigurationController : ControllerBase
     {
-        private readonly IConfigurationRepository _repository;
-        private readonly IMapper _mapper;
-
-        public ConfigurationController(IConfigurationRepository repository, IMapper mapper)
+        private readonly IConfigurationService _service;
+        public ConfigurationController(IConfigurationService service)
         {
-            _repository = repository;
-            _mapper = mapper;
+            _service = service;
         }
 
         [HttpGet]
 
         public IActionResult Get()
         {
-            return Ok(_repository.GetConfigurations());
+            return Ok(_service.GetConfigurations());
         }
 
         [HttpPost]
 
         public IActionResult Post(CreateConfigurationRequest request)
         {
-            var configuration = _mapper.Map<Configuration>(request);
-            _repository.AddConfiguration(configuration);
+            _service.AddConfiguration(request);
             return Ok();
         }
 
@@ -42,8 +39,7 @@ namespace ValhallaApp.Api.Controllers
 
         public IActionResult Put(UpdateConfigurationRequest request)
         {
-            var configuration = _mapper.Map<Configuration>(request);
-            _repository.UpdateConfiguration(configuration);
+            _service.UpdateConfiguration(request);
             return Ok();
         }
 
@@ -51,8 +47,7 @@ namespace ValhallaApp.Api.Controllers
 
         public IActionResult Delete(DeleteConfigurationRequest request)
         {
-            var configuration = _mapper.Map<Configuration>(request);
-            _repository.DeleteConfiguration(configuration);
+            _service.DeleteConfiguration(request);
             return Ok();
         }
     }

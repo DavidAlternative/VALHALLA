@@ -5,6 +5,7 @@ using ValhallaApp.Application.Requests;
 using ValhallaApp.Domain.Interfaces;
 using ValhallaApp.Domain.Entities;
 using Microsoft.AspNetCore.Authorization;
+using ValhallaApp.Application.Interfaces;
 
 namespace ValhallaApp.Api.Controllers
 {
@@ -13,34 +14,30 @@ namespace ValhallaApp.Api.Controllers
     [ApiController]
     public class OptionController : ControllerBase
     {
-        private readonly IOptionRepository _repository;
-        private readonly IMapper _mapper;
+        private readonly IOptionService _service;
 
-        public OptionController(IOptionRepository repository, IMapper mapper)
+        public OptionController(IOptionService service)
         {
-            _repository = repository;
-            _mapper = mapper;
+            _service = service;
         }
 
         [HttpGet]
         public IActionResult Get()
         {
-            return Ok(_repository.GetOption());
+            return Ok(_service.GetOption());
         }
         
         [HttpPost]
         public IActionResult Post(CreateOptionRequest request)
         {
-            var option = _mapper.Map<Option>(request);
-            _repository.AddOption(option);
+            _service.AddOption(request);
             return Ok();
         }
         
         [HttpPut]
         public IActionResult Put(UpdateOptionRequest request)
         {
-            var option = _mapper.Map<Option>(request);
-            _repository.UpdateOption(option);
+            _service.UpdateOption(request);
             return Ok();
         }
 
@@ -48,8 +45,7 @@ namespace ValhallaApp.Api.Controllers
 
         public IActionResult Delete(DeleteOptionRequest request)
         {
-            var option = _mapper.Map<Option>(request);
-            _repository.DeleteOption(option);
+            _service.DeleteOption(request);
             return Ok();
         }
 

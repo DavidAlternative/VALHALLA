@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using ValhallaApp.Application.Interfaces;
 using ValhallaApp.Application.Requests;
 using ValhallaApp.Domain.Entities;
 using ValhallaApp.Domain.Interfaces;
@@ -13,46 +14,42 @@ namespace ValhallaApp.Api.Controllers
     [ApiController]
     public class OrderController : ControllerBase
     {
-        private readonly IOrderRepository _repository;
-        private readonly IMapper _mapper;
+        private readonly IOrderService _service;
 
-        public OrderController(IOrderRepository repository, IMapper mapper)
+        public OrderController(IOrderService service)
         {
-            _repository = repository;
-            _mapper = mapper;
+            _service = service;
         }
+
 
         [HttpGet]
 
         public IActionResult Get()
         {
-            return Ok(_repository.GetOrders());
+            return Ok(_service.GetOrders());
         }
 
         [HttpPost]
 
         public IActionResult Post(CreateOrderRequest request)
         {
-            var order = _mapper.Map<Order>(request);
-            _repository.AddOrder(order);
+            _service.AddOrder(request);
             return Ok();
         }
 
         [HttpPut]
 
-        public IActionResult Put(CreateOrderRequest request)
+        public IActionResult Put(UpdateOrderRequest request)
         {
-            var order = _mapper.Map<Order>(request);
-            _repository.UpdateOrder(order);
+            _service.UpdateOrder(request);
             return Ok();
         }
 
         [HttpDelete]
 
-        public IActionResult Delete(CreateOrderRequest request)
+        public IActionResult Delete(DeleteOrderRequest request)
         {
-            var order = _mapper.Map<Order>(request);
-            _repository.DeleteOrder(order);
+            _service.DeleteOrder(request);
             return Ok();
         }
     }

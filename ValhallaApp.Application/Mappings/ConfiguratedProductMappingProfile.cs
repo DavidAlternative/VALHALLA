@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using ValhallaApp.Application.Requests;
+using ValhallaApp.Application.Responses;
 using ValhallaApp.Domain.Entities;
 
 namespace ValhallaApp.Application.Mappings
@@ -21,6 +22,8 @@ namespace ValhallaApp.Application.Mappings
 
             CreateMap<DeleteConfiguratedProductRequest, ConfiguratedProduct>();
             CreateMap<ConfiguratedProduct, DeleteConfiguratedProductRequest>();
+
+            CreateMap<ConfiguratedProduct, ConfiguratedProductResponse>();
         }
     }
 }
