@@ -1,18 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "CIvUHQ/TOgehhMwpAclVjAXmTiBS7UZhQzE0D7xcU6BEA0hk6Gfr09obvDIEe54CjMgmOgCfcHUUNBU5lGiElQ==",
+  "dgSpecHash": "pT5smTMGxhqSGAC9AwWiXXIVn2KOTWmDSj1+dhl/tMSgD99I73WIhwV//1Hr03gYZzMvtwlh0j7Sn8bNkugaew==",
   "success": true,
-  "projectFilePath": "C:\\Users\\307\\Desktop\\VALHALLA\\ValhallaApp.Application\\ValhallaApp.Application.csproj",
-  "expectedPackageFiles": [
-    "C:\\Users\\307\\.nuget\\packages\\automapper\\11.0.0\\automapper.11.0.0.nupkg.sha512",
-    "C:\\Users\\307\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\11.0.0\\automapper.extensions.microsoft.dependencyinjection.11.0.0.nupkg.sha512",
-    "C:\\Users\\307\\.nuget\\packages\\fluentvalidation\\11.0.2\\fluentvalidation.11.0.2.nupkg.sha512",
-    "C:\\Users\\307\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\11.0.2\\fluentvalidation.dependencyinjectionextensions.11.0.2.nupkg.sha512",
-    "C:\\Users\\307\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
-    "C:\\Users\\307\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\6.0.0\\microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512",
-    "C:\\Users\\307\\.nuget\\packages\\microsoft.extensions.options\\6.0.0\\microsoft.extensions.options.6.0.0.nupkg.sha512",
-    "C:\\Users\\307\\.nuget\\packages\\microsoft.extensions.primitives\\6.0.0\\microsoft.extensions.primitives.6.0.0.nupkg.sha512",
-    "C:\\Users\\307\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
-  ],
+  "projectFilePath": "C:\\Users\\401\\Desktop\\VALHALLA\\ValhallaApp.Application\\ValhallaApp.Application.csproj",
+  "expectedPackageFiles": [],
   "logs": []
 }

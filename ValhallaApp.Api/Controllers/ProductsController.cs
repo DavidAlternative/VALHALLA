@@ -5,6 +5,7 @@ using ValhallaApp.Application.Requests;
 using ValhallaApp.Domain.Interfaces;
 using ValhallaApp.Domain.Entities;
 using Microsoft.AspNetCore.Authorization;
+using ValhallaApp.Application.Interfaces;
 
 namespace ValhallaApp.Api.Controllers
 {
@@ -13,27 +14,23 @@ namespace ValhallaApp.Api.Controllers
     [ApiController]
     public class ProductsController : ControllerBase
     {
-        private readonly IProductsRepository _repository;
-        private readonly IMapper _mapper;
+        private readonly IProductService _service;
 
-
-        public ProductsController(IProductsRepository repository, IMapper mapper)
+        public ProductsController(IProductService service)
         {
-            _repository = repository;
-            _mapper = mapper;
+            _service = service;
         }
-
+    
         [HttpGet]
         public IActionResult Get()
         {
-            return Ok(_repository.GetProducts());
+            return Ok(_service.GetProducts());
         }
 
         [HttpPost]
         public IActionResult Post(CreateProductRequest request)
         {
-            var products = _mapper.Map<Product>(request);
-            _repository.AddProduct(products);
+            _service.AddProduct(request);
             return Ok();
         }
 
@@ -41,8 +38,7 @@ namespace ValhallaApp.Api.Controllers
         [HttpPut]
         public IActionResult Put(UpdateProductRequest request)
         {
-            var product = _mapper.Map<Product>(request);
-            _repository.UpdateProduct(product);
+            _service.UpdateProduct(request);
             return Ok();
 
         }
@@ -51,8 +47,7 @@ namespace ValhallaApp.Api.Controllers
 
         public IActionResult Delete(DeleteProductRequest request)
         {
-            var product = _mapper.Map<Product>(request);
-            _repository.DeleteProduct(product);
+            _service.DeleteProduct(request);
             return Ok();
         }
 

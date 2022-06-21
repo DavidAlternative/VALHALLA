@@ -38,7 +38,7 @@ builder.Services.AddAuthentication(options =>
 builder.Services.AddFluentValidation();
 builder.Services.AddApplicationServices();
 builder.Services.AddDbContext<ValhallaContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("Valhalla")));
-
+//Repositories
 //User
 builder.Services.AddTransient<IUserRepository,UserRepository>();
 //Products
@@ -57,6 +57,20 @@ builder.Services.AddTransient<IOrderRepository, OrderRepository>();
 //Services
 //User
 builder.Services.AddTransient<IUserService, UserService>();
+//Product
+builder.Services.AddTransient<IProductService, ProductService>();
+//Order
+builder.Services.AddTransient<IOrderService, OrderService>();
+//Option
+builder.Services.AddTransient<IOptionService, OptionService>();
+//Configuration
+builder.Services.AddTransient<IConfigurationService, ConfigurationService>();
+//ConfigiratedProduct
+builder.Services.AddTransient<IConfiguratedProductService, ConfiguratedProductService>();
+//Category
+builder.Services.AddTransient<ICategryService, CategoryService>();
+
+
 
 
 builder.Services.AddCors(p => p.AddPolicy("ValhallaCors", builder =>
