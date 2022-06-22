@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "duh7kx5GKHiVpxYjCpsjxXscc5xy0Tlb9QJOmRPbqr35uKRhPSzcmXdly6R7QYge1RywY9Fj0Q0YIoYL0s63LQ==",
+  "dgSpecHash": "AbTT7hGb/canYq2Zs8YNUhfD7eIxk0rXZN3wvyi7HGrud+00cmDZhHGGaq3QsaSMzevQmHuzE72yVyXoCseGoQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\401\\Desktop\\VALHALLA2\\ValhallaApp.Api\\ValhallaApp.Api.csproj",
+  "projectFilePath": "C:\\Users\\401\\Desktop\\VALHALLA\\ValhallaApp.Api\\ValhallaApp.Api.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\401\\.nuget\\packages\\automapper\\11.0.0\\automapper.11.0.0.nupkg.sha512",
     "C:\\Users\\401\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\11.0.0\\automapper.extensions.microsoft.dependencyinjection.11.0.0.nupkg.sha512",

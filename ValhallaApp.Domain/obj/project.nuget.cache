@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Uxn2VimDNCvvJq4H3Ll7+afzpgbGClrzKHcmyO2yMpxcaWdDUesSOJgVFzr53V3auaqmwRgi2YM4aFySFSa7+A==",
+  "dgSpecHash": "XiFcoA5nzgxX/YQP42XsZENeX5im5T2D85lzZLkOXe/rFWXdyNQWb+Zmpc2iG0eCxvDhfCLqlJMJNcd8s9zhNw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\401\\Desktop\\VALHALLA2\\ValhallaApp.Domain\\ValhallaApp.Domain.csproj",
+  "projectFilePath": "C:\\Users\\401\\Desktop\\VALHALLA\\ValhallaApp.Domain\\ValhallaApp.Domain.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
