@@ -34,7 +34,7 @@ namespace ValhallaApp.Api.Controllers
             return false;
         }
 
-        public string GenerateToken(string Username)
+        private string GenerateToken(string Username)
         {
             //header
             var privateKey = "v1d1g17dghf56g4d6gfd84gdd56fg4dfgddfg8";

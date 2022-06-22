@@ -2,6 +2,7 @@ using FluentValidation.AspNetCore;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
+using Microsoft.OpenApi.Models;
 using System.Text;
 using ValhallaApp.Application;
 using ValhallaApp.Application.Interfaces;
@@ -68,7 +69,7 @@ builder.Services.AddTransient<IConfigurationService, ConfigurationService>();
 //ConfigiratedProduct
 builder.Services.AddTransient<IConfiguratedProductService, ConfiguratedProductService>();
 //Category
-builder.Services.AddTransient<ICategryService, CategoryService>();
+builder.Services.AddTransient<ICategoryService, CategoryService>();
 
 
 
