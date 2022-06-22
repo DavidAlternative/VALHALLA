@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\401\\Desktop\\VALHALLA\\ValhallaApp.Api\\ValhallaApp.Api.csproj": {}
+    "C:\\Users\\401\\Desktop\\VALHALLA2\\ValhallaApp.Api\\ValhallaApp.Api.csproj": {}
   },
   "projects": {
-    "C:\\Users\\401\\Desktop\\VALHALLA\\ValhallaApp.Api\\ValhallaApp.Api.csproj": {
+    "C:\\Users\\401\\Desktop\\VALHALLA2\\ValhallaApp.Api\\ValhallaApp.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\401\\Desktop\\VALHALLA\\ValhallaApp.Api\\ValhallaApp.Api.csproj",
+        "projectUniqueName": "C:\\Users\\401\\Desktop\\VALHALLA2\\ValhallaApp.Api\\ValhallaApp.Api.csproj",
         "projectName": "ValhallaApp.Api",
-        "projectPath": "C:\\Users\\401\\Desktop\\VALHALLA\\ValhallaApp.Api\\ValhallaApp.Api.csproj",
+        "projectPath": "C:\\Users\\401\\Desktop\\VALHALLA2\\ValhallaApp.Api\\ValhallaApp.Api.csproj",
         "packagesPath": "C:\\Users\\401\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\401\\Desktop\\VALHALLA\\ValhallaApp.Api\\obj\\",
+        "outputPath": "C:\\Users\\401\\Desktop\\VALHALLA2\\ValhallaApp.Api\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
@@ -32,14 +32,14 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\401\\Desktop\\VALHALLA\\ValhallaApp.Application\\ValhallaApp.Application.csproj": {
-                "projectPath": "C:\\Users\\401\\Desktop\\VALHALLA\\ValhallaApp.Application\\ValhallaApp.Application.csproj"
+              "C:\\Users\\401\\Desktop\\VALHALLA2\\ValhallaApp.Application\\ValhallaApp.Application.csproj": {
+                "projectPath": "C:\\Users\\401\\Desktop\\VALHALLA2\\ValhallaApp.Application\\ValhallaApp.Application.csproj"
               },
-              "C:\\Users\\401\\Desktop\\VALHALLA\\ValhallaApp.Domain\\ValhallaApp.Domain.csproj": {
-                "projectPath": "C:\\Users\\401\\Desktop\\VALHALLA\\ValhallaApp.Domain\\ValhallaApp.Domain.csproj"
+              "C:\\Users\\401\\Desktop\\VALHALLA2\\ValhallaApp.Domain\\ValhallaApp.Domain.csproj": {
+                "projectPath": "C:\\Users\\401\\Desktop\\VALHALLA2\\ValhallaApp.Domain\\ValhallaApp.Domain.csproj"
               },
-              "C:\\Users\\401\\Desktop\\VALHALLA\\ValhallaApp.Infrastructure\\ValhallaApp.Infrastructure.csproj": {
-                "projectPath": "C:\\Users\\401\\Desktop\\VALHALLA\\ValhallaApp.Infrastructure\\ValhallaApp.Infrastructure.csproj"
+              "C:\\Users\\401\\Desktop\\VALHALLA2\\ValhallaApp.Infrastructure\\ValhallaApp.Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\401\\Desktop\\VALHALLA2\\ValhallaApp.Infrastructure\\ValhallaApp.Infrastructure.csproj"
               }
             }
           }
@@ -53,6 +53,26 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
+          "dependencies": {
+            "FluentValidation.AspNetCore": {
+              "target": "Package",
+              "version": "[11.0.3, )"
+            },
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[6.0.6, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.6, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.3.1, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -63,18 +83,26 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.404\\RuntimeIdentifierGraph.json"
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\401\\Desktop\\VALHALLA\\ValhallaApp.Application\\ValhallaApp.Application.csproj": {
+    "C:\\Users\\401\\Desktop\\VALHALLA2\\ValhallaApp.Application\\ValhallaApp.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\401\\Desktop\\VALHALLA\\ValhallaApp.Application\\ValhallaApp.Application.csproj",
+        "projectUniqueName": "C:\\Users\\401\\Desktop\\VALHALLA2\\ValhallaApp.Application\\ValhallaApp.Application.csproj",
         "projectName": "ValhallaApp.Application",
-        "projectPath": "C:\\Users\\401\\Desktop\\VALHALLA\\ValhallaApp.Application\\ValhallaApp.Application.csproj",
+        "projectPath": "C:\\Users\\401\\Desktop\\VALHALLA2\\ValhallaApp.Application\\ValhallaApp.Application.csproj",
         "packagesPath": "C:\\Users\\401\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\401\\Desktop\\VALHALLA\\ValhallaApp.Application\\obj\\",
+        "outputPath": "C:\\Users\\401\\Desktop\\VALHALLA2\\ValhallaApp.Application\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
@@ -95,8 +123,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\401\\Desktop\\VALHALLA\\ValhallaApp.Domain\\ValhallaApp.Domain.csproj": {
-                "projectPath": "C:\\Users\\401\\Desktop\\VALHALLA\\ValhallaApp.Domain\\ValhallaApp.Domain.csproj"
+              "C:\\Users\\401\\Desktop\\VALHALLA2\\ValhallaApp.Domain\\ValhallaApp.Domain.csproj": {
+                "projectPath": "C:\\Users\\401\\Desktop\\VALHALLA2\\ValhallaApp.Domain\\ValhallaApp.Domain.csproj"
               }
             }
           }
@@ -110,6 +138,16 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
+          "dependencies": {
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[11.0.0, )"
+            },
+            "FluentValidation.DependencyInjectionExtensions": {
+              "target": "Package",
+              "version": "[11.0.2, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -120,18 +158,23 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.404\\RuntimeIdentifierGraph.json"
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\401\\Desktop\\VALHALLA\\ValhallaApp.Domain\\ValhallaApp.Domain.csproj": {
+    "C:\\Users\\401\\Desktop\\VALHALLA2\\ValhallaApp.Domain\\ValhallaApp.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\401\\Desktop\\VALHALLA\\ValhallaApp.Domain\\ValhallaApp.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\401\\Desktop\\VALHALLA2\\ValhallaApp.Domain\\ValhallaApp.Domain.csproj",
         "projectName": "ValhallaApp.Domain",
-        "projectPath": "C:\\Users\\401\\Desktop\\VALHALLA\\ValhallaApp.Domain\\ValhallaApp.Domain.csproj",
+        "projectPath": "C:\\Users\\401\\Desktop\\VALHALLA2\\ValhallaApp.Domain\\ValhallaApp.Domain.csproj",
         "packagesPath": "C:\\Users\\401\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\401\\Desktop\\VALHALLA\\ValhallaApp.Domain\\obj\\",
+        "outputPath": "C:\\Users\\401\\Desktop\\VALHALLA2\\ValhallaApp.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
@@ -173,18 +216,23 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.404\\RuntimeIdentifierGraph.json"
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\401\\Desktop\\VALHALLA\\ValhallaApp.Infrastructure\\ValhallaApp.Infrastructure.csproj": {
+    "C:\\Users\\401\\Desktop\\VALHALLA2\\ValhallaApp.Infrastructure\\ValhallaApp.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\401\\Desktop\\VALHALLA\\ValhallaApp.Infrastructure\\ValhallaApp.Infrastructure.csproj",
+        "projectUniqueName": "C:\\Users\\401\\Desktop\\VALHALLA2\\ValhallaApp.Infrastructure\\ValhallaApp.Infrastructure.csproj",
         "projectName": "ValhallaApp.Infrastructure",
-        "projectPath": "C:\\Users\\401\\Desktop\\VALHALLA\\ValhallaApp.Infrastructure\\ValhallaApp.Infrastructure.csproj",
+        "projectPath": "C:\\Users\\401\\Desktop\\VALHALLA2\\ValhallaApp.Infrastructure\\ValhallaApp.Infrastructure.csproj",
         "packagesPath": "C:\\Users\\401\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\401\\Desktop\\VALHALLA\\ValhallaApp.Infrastructure\\obj\\",
+        "outputPath": "C:\\Users\\401\\Desktop\\VALHALLA2\\ValhallaApp.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
@@ -205,11 +253,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\401\\Desktop\\VALHALLA\\ValhallaApp.Application\\ValhallaApp.Application.csproj": {
-                "projectPath": "C:\\Users\\401\\Desktop\\VALHALLA\\ValhallaApp.Application\\ValhallaApp.Application.csproj"
+              "C:\\Users\\401\\Desktop\\VALHALLA2\\ValhallaApp.Application\\ValhallaApp.Application.csproj": {
+                "projectPath": "C:\\Users\\401\\Desktop\\VALHALLA2\\ValhallaApp.Application\\ValhallaApp.Application.csproj"
               },
-              "C:\\Users\\401\\Desktop\\VALHALLA\\ValhallaApp.Domain\\ValhallaApp.Domain.csproj": {
-                "projectPath": "C:\\Users\\401\\Desktop\\VALHALLA\\ValhallaApp.Domain\\ValhallaApp.Domain.csproj"
+              "C:\\Users\\401\\Desktop\\VALHALLA2\\ValhallaApp.Domain\\ValhallaApp.Domain.csproj": {
+                "projectPath": "C:\\Users\\401\\Desktop\\VALHALLA2\\ValhallaApp.Domain\\ValhallaApp.Domain.csproj"
               }
             }
           }
@@ -223,6 +271,22 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.5, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[6.0.5, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.5, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -233,7 +297,12 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.404\\RuntimeIdentifierGraph.json"
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
         }
       }
     }
