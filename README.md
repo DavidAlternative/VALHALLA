@@ -1,6 +1,3 @@
 # VALHALLA AUTOS
 
-__Hecho por:__
-
-* David Villegas
-* David Cañaveral
+This is a CRUD for a car dealership built in C# and Sql Server, employing clean architecture and jwt authentication
