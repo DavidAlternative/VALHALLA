@@ -53,12 +53,10 @@ builder.Services.AddAuthentication(options =>
 {
     options.TokenValidationParameters = new TokenValidationParameters
     {
-        ValidateIssuer = true,
-        ValidateAudience = true,
+        ValidateIssuer = false,
+        ValidateAudience = false,
         ValidateLifetime = true,
         ValidateIssuerSigningKey = true,
-        ValidIssuer = "https://localhost:44363",
-        ValidAudience = "https://localhost:44363",
         IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("v1d1g17dghf56g4d6gfd84gdd56fg4dfgddfg8"))
     };
 });

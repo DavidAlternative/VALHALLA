@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Este archivo se usa en el proceso de publicación y empaquetado del proyecto web. Para personalizar el comportamiento de este proceso,
+edite el archivo MSBuild. Visite https://go.microsoft.com/fwlink/?LinkID=208121 para obtener más información. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAHY/KJiOQrkaCtqrPZVHDLQAAAAACAAAAAAADZgAAwAAAABAAAACnyFv6tNYFyhnaC8VzwItvAAAAAASAAACgAAAAEAAAADrI489R57zp6y/4STSffBmAAAAAEQFnEYTN9FWz0Fvxscr2geGELoi/Rxg0QkGPk+B/55ns51EH01JC6HV4nkSRO2kCFWlon2vGfJMANkBrECVtomuESfuevL9vbhNmvznQBvMgc/N7LZuRuWu6VFoUjDwfRvEgP1ar+H+i5o10iljDtSaqlbeAU7wi4J7Y1PLZrbEUAAAAv/kgl/zAIc+gKyzGVlQaR6S/vMg=</EncryptedPassword>
+    <History>False|2022-08-10T00:42:31.7255176Z;</History>
+  </PropertyGroup>
+  <ItemGroup>
+    <DestinationConnectionStrings Include="Valhalla">
+      <Value>Data Source=tcp:valhallaapp.database.windows.net,1433%3bInitial Catalog=ValhallaApp.Api_db%3bUser Id=david%40valhallaapp%3bPassword=1020102622Dd</Value>
+    </DestinationConnectionStrings>
+  </ItemGroup>
+</Project>

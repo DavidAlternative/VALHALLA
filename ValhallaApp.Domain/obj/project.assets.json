@@ -8,23 +8,23 @@
     "net6.0": []
   },
   "packageFolders": {
-    "C:\\Users\\401\\.nuget\\packages\\": {},
+    "C:\\Users\\511\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\401\\Desktop\\VALHALLA\\ValhallaApp.Domain\\ValhallaApp.Domain.csproj",
+      "projectUniqueName": "C:\\Users\\511\\Desktop\\VALHALLA-main\\ValhallaApp.Domain\\ValhallaApp.Domain.csproj",
       "projectName": "ValhallaApp.Domain",
-      "projectPath": "C:\\Users\\401\\Desktop\\VALHALLA\\ValhallaApp.Domain\\ValhallaApp.Domain.csproj",
-      "packagesPath": "C:\\Users\\401\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\401\\Desktop\\VALHALLA\\ValhallaApp.Domain\\obj\\",
+      "projectPath": "C:\\Users\\511\\Desktop\\VALHALLA-main\\ValhallaApp.Domain\\ValhallaApp.Domain.csproj",
+      "packagesPath": "C:\\Users\\511\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\511\\Desktop\\VALHALLA-main\\ValhallaApp.Domain\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\401\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\511\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
@@ -60,12 +60,7 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "frameworkReferences": {
-          "Microsoft.NETCore.App": {
-            "privateAssets": "all"
-          }
-        },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.407\\RuntimeIdentifierGraph.json"
       }
     }
   }
